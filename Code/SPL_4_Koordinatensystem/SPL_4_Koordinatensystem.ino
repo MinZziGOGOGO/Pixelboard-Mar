@@ -40,13 +40,24 @@ void loop() {
 void setPixel(int x, int y, CRGB color) {
   // Check if the y-coordinate is even or odd to implement zigzag pattern
   int index;
-  y=15-y;
-  if (x % 2 == 0) {
-    // Even row
-    index = x * PANEL_HEIGHT + y;
-  } else {
-    // Odd row, reverse direction
-    index = (x + 1) * PANEL_HEIGHT - y - 1;
+  if(y <= PANEL_HEIGHT/2){
+    y=7-y;
+    if (x % 2 == 0) {
+      // Even row
+      index = x * PANEL_HEIGHT/2 + y;
+    } else {
+      // Odd row, reverse direction
+      index = (x + 1) * PANEL_HEIGHT/2 - y - 1;
+    }
+  }else {
+    y=y-8;
+    if (x % 2 == 0) {
+      // Even row
+      index = x * PANEL_HEIGHT/2 + y + 256;
+    } else {
+      // Odd row, reverse direction
+      index = (x + 1) * PANEL_HEIGHT/2 - y - 1 + 256;
+    }
   }
   leds[index] = color;
   FastLED.show();
@@ -56,4 +67,3 @@ void setPixel(int x, int y, CRGB color) {
 void clearPixel(int x, int y) {
   setPixel(x, y, CRGB::Black);
 }
-
