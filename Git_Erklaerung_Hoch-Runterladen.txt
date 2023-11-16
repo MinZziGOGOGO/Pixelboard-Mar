@@ -1,0 +1,11 @@
+Hochladen:
+
+git pull origin master
+git add .
+git commit -m "Commit Text"
+git push --set-upstream
+
+
+Herunterladen:
+
+git pull origin master
