@@ -3,7 +3,8 @@
 // Define the number of LEDs in the strip
 #define NUM_LEDS 256
 // Define the data pin to which the strip is connected
-#define DATA_PIN 5
+#define DATA_PIN1 5
+#define DATA_PIN2 23
 // Define the dimensions of the LED panel
 #define PANEL_WIDTH 64
 #define PANEL_HEIGHT 16
@@ -13,7 +14,8 @@ CRGB leds[NUM_LEDS];
 
 void setup() {
   // Initialize the FastLED library
-  FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS);
+  FastLED.addLeds<WS2812, DATA_PIN1, GRB>(leds, NUM_LEDS);
+  FastLED.addLeds<WS2812, DATA_PIN2, GRB>(leds, NUM_LEDS);
   // Set brightness (0-255)
   FastLED.setBrightness(50);
 
@@ -25,7 +27,7 @@ void loop() {
   // Call your animation function here
   // In this example, we'll light up a single LED at coordinates (x, y)
   int x = 2; // X-coordinate
-  int y = 1;  // Y-coordinate
+  int y = 5;  // Y-coordinate
   setPixel(x, y, CRGB::Red);
 
   // Add a delay to slow down the animation
@@ -41,7 +43,7 @@ void setPixel(int x, int y, CRGB color) {
   // Check if the y-coordinate is even or odd to implement zigzag pattern
   int index;
   if(y <= PANEL_HEIGHT/2){
-    y=7-y;
+    x=31-x;
     if (x % 2 == 0) {
       // Even row
       index = x * PANEL_HEIGHT/2 + y;
