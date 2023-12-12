@@ -1,0 +1,64 @@
+Pullen
+
+C:\Users\sagme>cd C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git init .
+Initialized empty Git repository in C:/Users/sagme/OneDrive - HTL Anichstrasse/Dokumente/HTL 4. Klasse/SPL_Pixelboard-Sagmeister/Git/.git/
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git remote add origin https://github.com/MinZziGOGOGO/Pixelboard-Mar.git
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git pull origin master
+remote: Enumerating objects: 52, done.
+remote: Counting objects: 100% (52/52), done.
+remote: Compressing objects: 100% (33/33), done.
+remote: Total 52 (delta 19), reused 43 (delta 12), pack-reused 0
+Unpacking objects: 100% (52/52), 2.64 MiB | 1.86 MiB/s, done.
+From https://github.com/MinZziGOGOGO/Pixelboard-Mar
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+
+
+Pushen
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git pull origin master
+From https://github.com/MinZziGOGOGO/Pixelboard-Mar
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git add .
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git commit -m "test"
+On branch master
+nothing to commit, working tree clean
+
+
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 383 bytes | 383.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MinZziGOGOGO/Pixelboard-Mar.git
+   998aaa0..758640d  master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>git push --set-upstream origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\sagme\OneDrive - HTL Anichstrasse\Dokumente\HTL 4. Klasse\SPL_Pixelboard-Sagmeister\Git>
