@@ -1,0 +1,22 @@
+﻿  Modell PIXELBOARD: 
+ 
+
+  1 Zirkulärer-Bezug-Schleifen gefunden
+ 
+
+   Schleife Nr. 1
+
+   Schleifentiefe beträgt 4
+
+KE-Nummer 10 (KOMPONENTE, ID = 59) 
+  in Modell PIXELBOARD verweist auf:
+
+KE-Nummer 15 (VERSATZGEOMETRIE_1, ID = 23452) 
+  in Modell STIRNPLATTE_1 muss folgen nach:
+
+KE-Nummer 9 (KOPIE-GEOMETRIE, ID = 181) 
+  in Modell STIRNPLATTE_1 verweist auf:
+
+KE-Nummer 10 (KOMPONENTE, ID = 59) 
+  in Modell PIXELBOARD - Kreis geschlossen.
+
