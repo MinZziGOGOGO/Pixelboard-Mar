@@ -1,9 +1,11 @@
 #include <FastLED.h>
+#include <JS.h>
+
 
 // Define the number of LEDs in the strip
 #define NUM_LEDS 256
 // Define the data pin to which the strip is connected
-#define DATA_PIN1 5
+#define DATA_PIN1 33
 #define DATA_PIN2 23
 // Define the dimensions of the LED panel
 #define PANEL_WIDTH 64
@@ -12,23 +14,17 @@
 // Create a CRGB array to store the colors of each LED
 CRGB leds1[NUM_LEDS];
 CRGB leds2[NUM_LEDS];
+JS joystick(25,26,27);
 
 void setup() {
-  // Initialize the FastLED library
   FastLED.addLeds<WS2812, DATA_PIN1, GRB>(leds1, NUM_LEDS);
   FastLED.addLeds<WS2812, DATA_PIN2, GRB>(leds2, NUM_LEDS);
-  // Set brightness (0-255)
   FastLED.setBrightness(50);
-
-  // Optional: Uncomment the following line to test all LEDs at startup
-  // testLEDs();
 }
 
 void loop() {
-  // Call your animation function here
-  // In this example, we'll light up a single LED at coordinates (x, y)
-  int x = 22; // X-coordinate
-  int y = 12;  // Y-coordinate
+  int x = 22; 
+  int y = 12;  
   setPixel(x, y, CRGB::White);
 
   // Add a delay to slow down the animation
